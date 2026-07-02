@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="MyClinic secure healthcare cloud architecture by Oluwatoyin Akadiri, featuring AWS serverless design, identity, encryption, WAF, API Gateway, Lambda, DynamoDB, CloudFront, and Route 53." />
+  <meta name="theme-color" content="#07111f" />
+  <title>Cloud Architecture | Oluwatoyin Akadiri</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=8" />
+</head>
+<body class="cloud-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="index.html#top" aria-label="Return to Oluwatoyin Akadiri portfolio home">
+        <span class="brand-mark" aria-hidden="true"><img src="assets/oa-logo.svg?v=8" alt="" width="64" height="64" /></span>
+        <span class="brand-copy"><strong>Oluwatoyin Akadiri</strong><small>Data Analyst</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="strategy.html">Strategy</a>
+        <a class="active" href="cloud.html" aria-current="page">Cloud</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#contact">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false"><span class="theme-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.91-.1-1.35A7 7 0 0 1 12 3Z" /></svg></span> Theme</button>
+        <a class="nav-cta" href="assets/Oluwatoyin_Akadiri_CV.pdf" target="_blank" rel="noopener">View CV</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="cloud-hero section">
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+      <div class="container cloud-hero-grid">
+        <div class="cloud-hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> AWS cloud architecture & healthcare security</p>
+          <h1>Secure serverless architecture for a patient portal.</h1>
+          <p class="hero-lead">MyClinic is a healthcare cloud architecture concept designed for secure patient access, appointment workflows, and authorized clinical updates. The solution uses AWS services to balance security, scalability, availability, and low operational overhead.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#architecture">Explore architecture <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="index.html#projects">Back to projects</a>
+          </div>
+        </div>
+        <div class="cloud-hero-visual reveal delay-one" aria-label="3D AWS architecture illustration">
+          <div class="cloud-3d-stage">
+            <div class="cloud-grid-floor"></div>
+            <div class="cloud-orbit orbit-one"></div>
+            <div class="cloud-orbit orbit-two"></div>
+            <div class="cloud-orbit orbit-three"></div>
+            <div class="cloud-cube cube-core"><span>API</span><small>Gateway</small></div>
+            <div class="cloud-cube cube-compute"><span>λ</span><small>Lambda</small></div>
+            <div class="cloud-cube cube-data"><span>DB</span><small>DynamoDB</small></div>
+            <div class="cloud-node node-route">Route 53</div>
+            <div class="cloud-node node-edge">CloudFront + S3</div>
+            <div class="cloud-node node-auth">Cognito</div>
+            <div class="cloud-node node-sec">WAF · KMS · ACM</div>
+            <div class="cloud-beam beam-one"></div>
+            <div class="cloud-beam beam-two"></div>
+            <div class="cloud-beam beam-three"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container cloud-metric-grid">
+        <article class="reveal"><span>Front door</span><strong>Route 53 + CloudFront</strong><p>Routes traffic globally and accelerates static portal delivery with edge caching.</p></article>
+        <article class="reveal delay-one"><span>Identity</span><strong>Cognito</strong><p>Controls patient and staff authentication with managed identity flows.</p></article>
+        <article class="reveal"><span>Compute</span><strong>API Gateway + Lambda</strong><p>Handles portal requests through serverless APIs and event-driven processing.</p></article>
+        <article class="reveal delay-one"><span>Protection</span><strong>WAF + KMS + ACM</strong><p>Adds perimeter filtering, encryption, and TLS certificate management.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="architecture">
+      <div class="container">
+        <div class="section-heading heading-row reveal">
+          <div>
+            <p class="eyebrow">Architecture layers</p>
+            <h2>Designed like a secure healthcare system, not just a diagram.</h2>
+          </div>
+        </div>
+        <div class="cloud-layer-grid">
+          <article class="cloud-layer-card reveal">
+            <span>01</span>
+            <h3>Access & delivery layer</h3>
+            <p>Route 53, CloudFront, and S3 provide reliable entry, fast static delivery, and a clean separation between public assets and protected application workflows.</p>
+          </article>
+          <article class="cloud-layer-card reveal delay-one">
+            <span>02</span>
+            <h3>Application layer</h3>
+            <p>API Gateway exposes controlled endpoints while Lambda runs appointment, records, and clinical-update logic without maintaining servers.</p>
+          </article>
+          <article class="cloud-layer-card reveal">
+            <span>03</span>
+            <h3>Data layer</h3>
+            <p>DynamoDB supports scalable patient and appointment data patterns, with KMS-backed encryption for sensitive information.</p>
+          </article>
+          <article class="cloud-layer-card reveal delay-one">
+            <span>04</span>
+            <h3>Security & governance layer</h3>
+            <p>Cognito, IAM, ACM, WAF, and encryption controls protect identities, traffic, APIs, and stored data across the portal.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container cloud-security-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Security design</p>
+          <h2>Controls mapped to healthcare data protection needs.</h2>
+        </div>
+        <div class="cloud-security-list reveal delay-one">
+          <article><strong>Identity-first access</strong><p>Separate patient and staff access paths with Cognito-managed authentication and role-aware API access.</p></article>
+          <article><strong>Encrypted data handling</strong><p>Use KMS-backed encryption for sensitive records and secure transport with ACM-managed TLS certificates.</p></article>
+          <article><strong>API and edge protection</strong><p>Use WAF filtering, API Gateway throttling patterns, and CloudFront edge delivery to reduce exposure.</p></article>
+          <article><strong>Operational resilience</strong><p>Serverless services reduce patching burden while scaling automatically with patient portal traffic.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cloud-architecture-section" id="architecture-diagram">
+      <div class="container">
+        <div class="section-heading heading-row reveal">
+          <div>
+            <p class="eyebrow">Original architecture diagram</p>
+            <h2>A focused AWS service map for a secure patient portal.</h2>
+            <p class="section-subtext">A portfolio-ready view of the MyClinic cloud architecture, highlighting the services, security boundaries, and operational flow without overwhelming the page.</p>
+          </div>
+          <a class="text-link" href="assets/myclinic-architecture-diagram.png" target="_blank" rel="noopener">Open diagram <span>↗</span></a>
+        </div>
+        <div class="cloud-diagram-feature cloud-architecture-showcase reveal">
+          <div class="cloud-diagram-card">
+            <img src="assets/myclinic-architecture-diagram.png" alt="AWS architecture diagram for the MyClinic patient portal" loading="lazy" width="2551" height="1819" />
+          </div>
+          <div class="cloud-diagram-summary">
+            <span>Architecture focus</span>
+            <h3>Secure, serverless healthcare workflow</h3>
+            <p>The architecture connects DNS, edge delivery, identity, APIs, compute, database, and encryption services into a simple patient-facing system with clear security responsibilities.</p>
+            <div class="tag-row"><span>Route 53</span><span>CloudFront</span><span>Cognito</span><span>API Gateway</span><span>Lambda</span><span>DynamoDB</span><span>KMS</span><span>WAF</span></div>
+          </div>
+        </div>
+        <div class="cloud-proof-grid reveal delay-one" aria-label="MyClinic architecture highlights">
+          <article>
+            <span>01</span>
+            <h3>Patient access layer</h3>
+            <p>Route 53, CloudFront, S3, ACM, and WAF create a fast, protected entry point for the web portal.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Application workflow</h3>
+            <p>Cognito, API Gateway, and Lambda separate identity, request routing, and backend business logic.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Data protection</h3>
+            <p>DynamoDB and KMS support encrypted storage patterns designed around sensitive healthcare records.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section">
+      <div class="container contact-card reveal">
+        <div>
+          <p class="eyebrow">Cloud + analytics</p>
+          <h2>Architecture thinking with business context.</h2>
+          <p>This project shows how I connect secure system design with practical healthcare workflows, stakeholder needs, and operational decision-making.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:oluwatoyincyprus@gmail.com">Email me</a>
+          <a class="button button-secondary" href="assets/Oluwatoyin_Akadiri_CV.pdf" target="_blank" rel="noopener">View CV</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© <span id="year"></span> Oluwatoyin Akadiri</span>
+      <div>
+        <a href="index.html#top">Portfolio</a>
+        <a href="strategy.html">Strategy</a>
+        <a id="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js?v=8"></script>
+</body>
+</html>

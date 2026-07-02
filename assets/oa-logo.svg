@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Oluwatoyin Akadiri logo</title>
+  <desc id="desc">OA monogram with an ascending analytics chart</desc>
+  <defs>
+    <linearGradient id="bg" x1="8" y1="6" x2="58" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#142844"/>
+      <stop offset="1" stop-color="#07111F"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="42" y1="18" x2="54" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8DA2FF"/>
+      <stop offset="1" stop-color="#3FF0D0"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="62" height="62" rx="18" fill="url(#bg)"/>
+  <rect x="1.75" y="1.75" width="60.5" height="60.5" rx="17.25" fill="none" stroke="#AEEFE5" stroke-opacity=".35" stroke-width="1.5"/>
+  <text x="11" y="41" fill="#F6FAFF" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="800" letter-spacing="-1">OA</text>
+  <rect x="41" y="31" width="4" height="12" rx="2" fill="url(#bar)"/>
+  <rect x="47" y="24" width="4" height="19" rx="2" fill="url(#bar)"/>
+  <rect x="53" y="17" width="4" height="26" rx="2" fill="url(#bar)"/>
+  <path d="M50 8.5l1.5 3.2 3.2 1.5-3.2 1.5-1.5 3.2-1.5-3.2-3.2-1.5 3.2-1.5L50 8.5Z" fill="#F8C77E"/>
+</svg>
